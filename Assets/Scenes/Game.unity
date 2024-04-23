@@ -1620,6 +1620,7 @@ GameObject:
   - component: {fileID: 1045707714}
   - component: {fileID: 1045707713}
   - component: {fileID: 1045707715}
+  - component: {fileID: 1045707716}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -1756,13 +1757,13 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 44db4fdd236de2048ad325b53cce769a, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1045707716}
+        m_TargetAssemblyTypeName: move, Assembly-CSharp
+        m_MethodName: Left
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1771,7 +1772,19 @@ MonoBehaviour:
     m_ActionId: 5649189c-4fbe-45dc-9cb1-a3283d6833fd
     m_ActionName: Move/Left[/Keyboard/leftArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1045707716}
+        m_TargetAssemblyTypeName: move, Assembly-CSharp
+        m_MethodName: Right
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5d1de3f8-0d3d-4726-a8a5-00762589b956
     m_ActionName: Move/Right[/Keyboard/rightArrow]
   - m_PersistentCalls:
@@ -1787,6 +1800,19 @@ MonoBehaviour:
   m_DefaultActionMap: Move
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 215947310}
+--- !u!114 &1045707716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045707710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44db4fdd236de2048ad325b53cce769a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpped: 20
 --- !u!1 &1504909869
 GameObject:
   m_ObjectHideFlags: 0
